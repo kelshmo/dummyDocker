@@ -1,0 +1,21 @@
+Type: Compendium
+Package: Synapse compendium
+Title: The goal is to test whether binder is compatible with synapser.
+Version: 0.0.1
+Authors@R: 
+    person(given = "K",
+           family = "Mo",
+           role = c("K", "Mo"),
+           email = "kelsey.montgomery@sagebase.org",
+           comment = c(ORCID = "none"))
+Description: Pilot minimum virtual environment
+License: What license it uses
+biocViews:
+Depends: 
+    biomaRt,
+    dplyr,
+    synapser
+Additional_repositories:
+    http://ran.synapse.org
+Encoding: UTF-8
+LazyData: true
