@@ -2,9 +2,7 @@ FROM rocker/binder:3.6.0
 LABEL maintainer='KMo'
 USER root
 COPY . ${HOME}
-RUN apt-get update -y\
-&& apt-get install -y python3-pip\
-&& pip install synapseclient\
+RUN pip install synapseclient\
 && R -e "install.packages('reticulate')"
 RUN chown -R ${NB_USER} ${HOME}
 USER ${NB_USER}
